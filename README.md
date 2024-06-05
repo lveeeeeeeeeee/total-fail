@@ -24,7 +24,8 @@ idk about epochs amount though (25). really no idea if it would turn out better 
 nothing. very simple, almost "echo" type of bot. aiogram (no webhooks).
 
 ## dependencies
-mainly in the notebook. important though, 
+mainly in the notebook. important though,
+- python version is specifically 3.11.0rc1. i suspect this wouldnt run otherwise because tensorflow
 - keras is 3.3.0 (train on 2.15.0)
 - tensorflow is 2.16.0 (train on 2.15.0-cpp311-cpp311-29-29-linux-x86-64.whl or something)
 - iaa thing for augmentation is from https://github.com/marcown/imgaug.git (thanks marcown)
