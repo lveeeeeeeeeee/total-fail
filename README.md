@@ -3,12 +3,13 @@
 
 ### task: people segmentation
 dataset: https://www.kaggle.com/datasets/nikhilroxtomar/person-segmentation
+
 model : deeplabv3+ with resnet50 as encoder; squeeze and excite blocks to pay attention to detail
 
 ## result: FAIL
 ### why the fuck up?
 i think the fuck up happened because of these things:
-- lr = 3*10^-4 and barely decreaces
+- lr = 3*10^-4 and barely decreases
 - bad loss function even though i have dice loss which i didnt use to compile the model
 - train got mixed up with validation due to tensorflow crashing during training
 - insane augmentation
@@ -17,7 +18,7 @@ i think the fuck up happened because of these things:
 - (maybe batch size?)
 - (maybe dropouts everywhere with rate 0.2 and batch normalising layers?)
 
-idk about epochs amount though (25). really no idea if it would turn out better
+idk about epochs amount though (25). really no idea if it would turn out better with more epochs
 
 ## telegram bot, what about it?
 nothing. very simple, almost "echo" type of bot. aiogram (no webhooks).
@@ -32,7 +33,9 @@ mainly in the notebook. important though,
 
 ## conclusions and results
 this wont be "maintained" obviously, its a one-off
+
 to run, just cd into the repo directory and python (and install dependencies)
+
 results are very bad
 
 you can see segmentation results for yourself in "results" directory. green (or cyan) colored areas are supposed to represent background
